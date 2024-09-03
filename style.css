@@ -359,6 +359,7 @@ textarea{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    /* gap: 1rem; */
     text-align: left;
 }
 #contact>p{
@@ -370,16 +371,21 @@ textarea{
     font-size: 1.8rem;
 }
 #form{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-bottom: 4rem;
     position: relative;
     z-index: 1;
     margin: 0 7rem;
+    /* gap: 2rem; */
     /* padding: 0; */
+}
+#formbox{
+    display: flex;
+    justify-content: right;
 }
 .conicon{
     display: flex;

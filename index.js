@@ -80,10 +80,16 @@
 // }else{
 //     console.log("The number is negative");
 // }
-let letter = 'o';
+// let letter = 'o';
 
-if (letter=='a'||letter=='e'||letter=='i'||letter=='o'||letter=='u'){
-    console.log("The character is vowel");
+// if (letter=='a'||letter=='e'||letter=='i'||letter=='o'||letter=='u'){
+//     console.log("The character is vowel");
+// }else{
+//     console.log("The character is consonant");
+// }
+let cust = "Member";
+if (cust==="Member"){
+    console.log("You earned" +  + "point");
 }else{
-    console.log("The character is consonant");
+    
 }
