@@ -87,9 +87,24 @@
 // }else{
 //     console.log("The character is consonant");
 // }
-let cust = "Member";
-if (cust==="Member"){
-    console.log("You earned" +  + "point");
+let marks = 75;
+let grade;
+for(var count = 0;count<4;){
+if (marks > 60){
+console.log("First Class");
+grade = "A";
+}else if (marks > 45){
+console.log("Second Class");
+grade = "B"
 }else{
-    
+console.log("Fail");
+grade = "No Grade"
 }
+console.log("Grade:", grade);}
+break;
+// marks = 0 -fail
+// marks = 25 -fail
+// marks = 45 -fail
+// marks = 50 -second class
+// marks = 60 - second class
+// maeks = 75 - first class

@@ -2,7 +2,7 @@
 *{
     font-size:16px;
     margin:0;
-    box-sizing:border-box;
+    /* box-sizing:border-box; */
 }
 
 body{
@@ -10,7 +10,7 @@ body{
     background-color: #101630;
     color: white;
     font-family: Helvetica;
-    width: 100vw;
+    /* width: fit-cont; */
     /* display: grid;
     grid-template-rows: 1fr 1fr 4fr 1fr 1fr; */
 }
@@ -126,11 +126,14 @@ h2{
     margin:0;
 }
 #aboutme{
-    display: flex;
-    text-align: left;
-    justify-content: center;
+    display:grid;
+    /* grid-template-columns: repeat(auto-fill,minmax(300px,600px)); */
+    grid-template-columns: 1fr 3fr;
+    /* text-align: left; */
+    /* justify-content: center; */
     align-items: center;
-    position: relative;
+
+    /* position: relative; */
 }
 #photo{
     border: 0.9rem solid #4fb7dc;
@@ -145,6 +148,10 @@ h2{
 }
 #one{
     margin: 0 5rem ;
+    text-align: left;
+}
+.two{
+    text-align: center;
 }
 #resume{
     background: none;
@@ -162,11 +169,11 @@ a:hover{
 #image{
     width: 30rem;
     border-radius: 1rem;
-    z-index: 2;
+    /* z-index: 2; */
 }
 #frame{
     position: relative;
-    
+    margin: 0rem 5rem 0rem 0rem;
     /* border: 1px solid; */
     padding: 0rem 3rem 3rem 0rem;
 }
@@ -184,7 +191,8 @@ button{
 }
 #buttons{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
 }
 /* .fun{
     display: flex;
@@ -198,9 +206,9 @@ button{
 .projects{
     display: flex;
     align-items: center;
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     /* margin: 10rem auto; */
-    height: 75vh;
+    height: 100vh;
     
 }
 .portframe{
@@ -274,10 +282,9 @@ h3{
     height: 23rem;
     position:absolute;
     display: grid;
-    
-    top: 0;
     opacity: 0.6;
-    z-index: 0;
+    z-index: 1;
+    top:0;
 }
 #circle2{
     width: 11rem;
@@ -294,7 +301,6 @@ h3{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     left: 0;
-    top: -100;
 }
 #expp{
     font-size: 1.5rem;
@@ -315,7 +321,7 @@ form{
     /* margin-left: 10rem; */
     background: linear-gradient(120deg,#50c7ff,#6600FF) ;
     border-radius: 1rem;
-    
+    /* z-index: 2; */
 }
 ::placeholder{
     font-size: 1.5rem;
@@ -325,9 +331,9 @@ input[type="text"],input[type="email"]{
     background-color: #101630;
     border:none;
     border-radius: 0.7rem;
-    width: 25rem;
+    width: 28rem;
     height: 3.5rem;
-    padding-left:25px;
+    /* padding-left:25px; */
     color:white;
 }
 textarea{
@@ -359,8 +365,9 @@ textarea{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    /* gap: 1rem; */
+    gap: 1rem;
     text-align: left;
+    /* z-index: 2; */
 }
 #contact>p{
     
@@ -376,11 +383,12 @@ textarea{
     /* align-items: center; */
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fill,minmax(300px,600px)); */
     padding-bottom: 4rem;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     margin: 0 7rem;
-    /* gap: 2rem; */
+    gap: 2rem;
     /* padding: 0; */
 }
 #formbox{
@@ -388,29 +396,36 @@ textarea{
     justify-content: right;
 }
 .conicon{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content:space-around;
-    
 }
 .icon{
-    width: 5rem;
+    /* width: 5rem;
     height: 2rem;
     padding: 2.3rem 1.8rem ;
-    margin-right: 2rem;
+    margin-right: 2rem; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 5rem */
+    padding: 2.5rem 2rem;
+    /* width: 5rem; */
+
+
     border-radius: 1rem;
-    background:linear-gradient(120deg,#50c7ff,#640de7) ;
+    background-image:linear-gradient(120deg,#50c7ff,#640de7) ;
 }
-address{
+.address{
     font-style: normal;
     /* line-height: 25px; */
     display:inline-flex;
     flex-wrap: wrap;
     align-items: center;
 }
-#location{
+.location{
     display: flex;
-
+    gap: 2rem;
 }
 /* #contactsec{
     text-align: center;
@@ -427,10 +442,10 @@ address{
     justify-content: space-around; */
     /* padding-top: 10rem; */
     /* height: 100vh; */
-    height: 90%;
+    height: 100vh;
     
     /* margin:0; */
-    padding:0;
+    padding: 0;
     position: relative;
     /* padding-left: 125px; */
 }
@@ -439,12 +454,16 @@ address{
     background: linear-gradient(120deg,#6600FF,#50c7ff);
     border-top-left-radius:150px ;
     margin-top: 6rem;
-    padding-top: 0.1rem;
-    height: auto;
+    /* padding-top: 6rem; */
+    height: ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 .ficon{
     /* margin-right:10px; */
-    align-items:flex-end;
+    /* align-items:flex-end; */
 }
 #contact>article{
     text-align: lef;
@@ -464,6 +483,7 @@ article{
     display: flex;
     /* flex-direction: row; */
     justify-content: space-between;
+    gap: 2rem;
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; */
 
@@ -482,15 +502,49 @@ article{
     *{
         font-size: 14px;
     }
-    #form{
+    #aboutme{
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
+    #one{
+        text-align: center;
+    }
+    #buttons{
+        gap: 2rem;
+    }
+    #form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section{
+        
+    }
+    #formbox{
+        display: flex;
+        
+    }
+    .projects{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    /* #contactme{
+        flex-wrap: wrap;
+        flex-direction: column;
+    } */
 }
 @media (max-width: 768px){
     *{
         font-size: 12px;
     }
-    #form{
+    /* #form{
         flex-wrap: wrap;
-    }
+    } */
 }
