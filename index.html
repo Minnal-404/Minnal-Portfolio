@@ -15,17 +15,19 @@
     <!-- <div id="bg">
         <p id="bgtext">DEVELOPER</p>
     </div> -->
-
-    <section class="header">
-        <nav>
-            <a><img class="mylogo" src="assets/images/logo1.png" alt="Logo"></a>
+    <nav>
+        <button id="menu"><img class="mylogo" src="assets/images/logo1.png" alt="Logo"></button id="menu">
+        <div class="drop">
             <a href="#home">HOME</a>
             <a href="#aboutme">ABOUT ME</a>
             <a href="#portfolio">PORTFOLIO</a>
 
             <a href="#experience">SKILLS</a>
             <a href="#footer">CONTACT</a>
-        </nav>
+        </div>
+    </nav>
+    <section id="home" class="header">
+
 
         <div id="firstsec">
             <p id="headp">I'm a</p>
@@ -67,7 +69,7 @@
         <!-- <p class="fun">Coming Soon...</p> -->
         <article class="projects">
             <div class="two">
-                <h3>ABOUT ME</h3>
+                <h3>REGEN-GLOW</h3>
                 <p>
                     <br>Hi, I’m Jeshin Daniel, a FSSA student. When I’m not working, I enjoy playing games and
                     listening to
@@ -143,23 +145,23 @@
         </article>
     </section> -->
     <section id="experience">
-        <h2>SKILLS</h2>
+        <h2 id="skills">SKILLS</h2>
         <article id="explogo">
             <div>
                 <img class="logo" src="assets/images/html5.png" alt="HTML logo">
-                <p id="expp">HTML</p>
+                <h3 id="expp">HTML</h3>
             </div>
             <div>
                 <img class="logo" src="assets/images/css3.png" alt="CSS3 logo">
-                <p id="expp">CSS3</p>
+                <h3 id="expp">CSS3</h3>
             </div>
             <div>
                 <img class="logo" src="assets/images/javascript.png" alt="Javascript logo">
-                <p id="expp">Javascript</p>
+                <h3 id="expp">Javascript</h3>
             </div>
             <div>
                 <img class="logo" src="assets/images/bootstrap.png" alt="Bootstrap logo">
-                <p id="expp">Bootstrap</p>
+                <h3 id="expp">Bootstrap</h3>
             </div>
         </article>
 
@@ -171,43 +173,44 @@
         <div class="circle" id="circle2"></div>
         <div class="circle" id="circle1"></div>
         <div id="footerbg">
-            <h2>CONTACT</h2>
+            <h2 id="contacthead">CONTACT</h2>
             <article id="form">
                 <article id="contact">
-                    <h4 id="dm">Drop Me a Message</h4>
-                    <div>
-                        <p>I’d love to hear from you! Whether you have a project in mind, want to collaborate, or just
-                            want
-                            to chat about my work, feel free to drop me a message. I’m always excited to connect
-                            with fellow creatives and professionals.
-                        </p>
-                    </div>
-                    <div>
-                        <a class="location" href=tel:+91 9080102134>
-                            <i class="fa-solid fa-phone fa-lg icon"></i>
-                            <p class="address">+91 9080102134</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a class="location" href=mailto:jeshin.jeba@fssa.freshworks.com><i
-                                class="fa-solid fa-envelope fa-lg icon"></i>
-                            <p class="address">jeshin.jeba@fssa.freshworks.com</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a class="location" href="https://maps.app.goo.gl/j6W5vGTcdjHqYoSy7">
-                            <i class="fa-solid fa-location-dot fa-xl icon"></i>
-                            <address class="address">
-                                Block-C, GLOBAL INFOCITY PARK, 40th St, Kodandarama Nagar, Perungudi, Chennai,
-                                TamilNadu-600096.
-                            </address>
-                        </a>
-                    </div>
+                    <h3 id="dm">Drop Me a Message</h4>
+                        <div>
+                            <p>I’d love to hear from you! Whether you have a project in mind, want to collaborate, or
+                                just
+                                want
+                                to chat about my work, feel free to drop me a message. I’m always excited to connect
+                                with fellow creatives and professionals.
+                            </p>
+                        </div>
+                        <div>
+                            <a class="location" href=tel:+91 9080102134>
+                                <i class="fa-solid fa-phone fa-lg icon"></i>
+                                <p class="address">+91 9080102134</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="location" href=mailto:jeshin.jeba@fssa.freshworks.com><i
+                                    class="fa-solid fa-envelope fa-lg icon"></i>
+                                <p class="address">jeshin.jeba@fssa.freshworks.com</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="location" href="https://maps.app.goo.gl/j6W5vGTcdjHqYoSy7">
+                                <i class="fa-solid fa-location-dot fa-xl icon"></i>
+                                <address class="address">
+                                    Block-C, GLOBAL INFOCITY PARK, 40th St, Kodandarama Nagar, Perungudi, Chennai,
+                                    TamilNadu-600096.
+                                </address>
+                            </a>
+                        </div>
 
                 </article>
 
                 <article id="formbox">
-                    <form class="border">
+                    <form >
                         <div><input type="text" placeholder="Name" name="name" id="name" required></div>
                         <div><input type="email" placeholder="Email" name="email" id="email" required></div>
                         <div><textarea placeholder="Message" name="message" id="message" required></textarea></div>
@@ -215,7 +218,7 @@
                     </form>
                 </article>
             </article>
-
+            <div class="border"></div>
             <article id="bottom">
                 <div>
                     <img class="mylogo mylogolast" src="assets/images/logo2.png" alt="logo">
