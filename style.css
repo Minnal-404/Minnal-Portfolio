@@ -7,18 +7,12 @@
 }
 
 body{
-    /* padding:5rem 10rem; */
     background-color: #101630;
     color: white;
     font-family: Helvetica;
-    /* width: fit-cont; */
-    /* display: grid;
-    grid-template-rows: 1fr 1fr 4fr 1fr 1fr; */
 }
 .header{
     padding:0 7rem;
-    /* display: grid;
-    grid-template-rows: 1fr 2fr; */
     display: flex;
     flex-direction: column;
     gap: 10rem;
@@ -40,16 +34,12 @@ body{
     display: flex;
     left:0;
     font-weight:bolder;
-    /* transform: rotate(-45deg); */
-   text-align: left;
-   /* letter-spacing: 5rem; */
-    
+    opacity: 1;
 }
 #menu{
     background: #101630;
     width: auto;
     height: auto;
-    /* padding: 0; */
     margin: 0;
 }
 .drop{
@@ -57,24 +47,19 @@ body{
     justify-content: space-between;
     width: 80%;
 }
-
 nav{
     display:flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     align-items:center;
     position: sticky;
     top: 0px;
-    /* gap: 7rem; */
     background-color: #101630;
     padding-top: 1rem;
     z-index: 3;
     padding: 1rem 7rem;
-    /* margin: 0 7rem; */
 }
 .mylogo{
     width:6rem;
-    
 }
 
 #headp{
@@ -93,6 +78,7 @@ h1{
 p,address{
     font-size: 1.2rem;
     text-align: left;
+    opacity: 0.5;
 }
 #bdot{
     display: flex;
@@ -100,11 +86,7 @@ p,address{
 #dot{
     background-color: #4fb7dc;
     width: 1.5rem;
-    height: 1.5rem;
-    /* margin-bottom: 0.7rem; */
-    
-    
-    
+    height: 1.5rem; 
 }
 #hard{
     display: grid;
@@ -113,9 +95,7 @@ p,address{
 #firstsec{
     text-align:left;
     display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    
+    flex-direction: column;    
 }
 #previous{
     background-color:navy;
@@ -127,16 +107,10 @@ p,address{
     color:white;
     margin:2.5rem 0;
 }
-main{
-    /* display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr; */
-}
+
 section{
     padding:0 7rem;
-    /* border:1px solid red; */
     text-align: center;
-    /* margin-top: 5rem; */
-    /* padding-top: 5rem; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -147,22 +121,12 @@ h2{
     justify-content: center;
     font-weight: 600;
     font-size: 2.5rem;
-    /* margin-top: 6rem; */
-}
-#abouttitle{
-    margin:0;
 }
 #aboutme{
     display:grid;
-    /* grid-template-columns: repeat(auto-fill,minmax(50vh,1fr)); */
     grid-template-columns: 1fr 5fr;
-    /* text-align: left; */
-    /* justify-content: center; */
     align-items: center;
-    /* gap: 3rem; */
-    /* position: relative; */
 }
-
 #one{
     display: flex;
     flex-direction: column;
@@ -171,55 +135,57 @@ h2{
     text-align: left;
 }
 .two{
-    text-align: center;
+    text-align: left;
 }
 #resume{
     background: none;
     border: 0.2rem solid #4a4fc7;
-    /* margin: 0; */
 }
 a{
     color: white;
     text-decoration: none;
 }
-a:hover,#previous:hover{
+#previous:hover{
+    transition: 0.5s;
+   transform: scale(1.1);
+}
+a:hover{
    color:skyblue;
-   /* margin: 0.1rem; */
    transition: 0.5s;
    transform: scale(1.1);
 }
 nav>div>a:hover{
     margin: 0;
 }
+#previous:hover{
+    color: none;
+}
+i:hover{
+    transition: 0.5s;
+   transform: scale(1.1);
+   color: white;
+}
 #photo{
     border: 0.9rem solid #4fb7dc;
-    /* width: 28rem;
-    height: 35rem; */
     width: 80%;
     height: 85%;
     position: absolute;
     z-index: -1;
-    /* display: grid; */
     right: 0;
     bottom: 0;
     border-radius: 0.5rem;
 }
 #image{
-    /* width: 30rem; */
     width: 90%;
     height: 90%;
     left: 0;
     border-radius: 1rem;
     position: absolute;
-    /* z-index: 2; */
 }
 #frame{
     position: relative;
     width: 32rem;
     height: 40rem;
-    /* margin: 0rem 5rem 0rem 0rem; */
-    /* border: 1px solid; */
-    /* padding: 0rem 3rem 3rem 0rem; */
 }
 button{
     background: linear-gradient(120deg,#50c7ff,#6509ff ) ;
@@ -237,13 +203,7 @@ button{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* gap: 2rem; */
 }
-/* .fun{
-    display: flex;
-    justify-content: center;
-    padding-top: 40rem;
-} */
 #portfolio{
     height: 100vh;
     display: flex;
@@ -254,28 +214,17 @@ span{
     font-size: xx-large;
 }
 .projects{
-    /* display: flex; */
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fill,minmax(50vh,1fr));
     gap: 5rem;
     align-items: center;
-    /* border: 1px solid greenyellow; */
-    /* margin: 10rem auto; */
-    /* height: 100vh; */
 }
 .portframe{
     position: relative;
-    /* right: 0; */
-    /* border: 1px solid; */
     height: 25rem;
     width: 25rem;
-    /* padding: 0rem 0rem 2rem 2rem; */
 }
 .portimage{
-    /* width: 30rem;
-    height: 25rem; */
-    /* width: auto; */
     height: 90%;
     border-radius: 1rem;
     position: absolute;
@@ -283,13 +232,10 @@ span{
 }
 .portphoto{
     border: 0.9rem solid #4fb7dc;
-    /* width: 28rem;
-    height: 24rem; */
     width: 90%;
     height: 90%;
     position: absolute;
     z-index: -1;
-    /* display: grid; */
     left: 0;
     bottom: 0;
     border-radius: 0.5rem;
@@ -305,13 +251,8 @@ h3{
 .center{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
-#experience{
-    /* display: grid; */
-    /* grid-template-rows: 1fr 2fr 2fr; */
-    
-}
+
 #explogo{
     /* display: flex;
     justify-content: space-around; */
@@ -375,6 +316,7 @@ h3{
     font-size: 1.5rem;
     font-weight: normal;
     color: white;
+    opacity: 0.5;
 }
 .logo{
     width: 5rem;
@@ -403,7 +345,7 @@ form{
     font-size: 1.5rem;
     padding: 1rem;
 }
-input[type="text"],input[type="email"]{
+input{
     margin: 0.3rem 0;
     background-color: #101630;
     border:none;
@@ -505,11 +447,13 @@ textarea{
     display:inline-flex;
     flex-wrap: wrap;
     align-items: center;
+    opacity: 1;
 }
 .location{
     display: flex;
     gap: 2rem;
 }
+
 /* #contactsec{
     text-align: center;
     margin-top: 1rem;
@@ -713,7 +657,7 @@ article{
         position: absolute;
         background-color: black;
         width: 80vw;
-        top: 0;
+        top: 5rem;
         /* min-width: 50%; */
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 5;
@@ -728,13 +672,16 @@ article{
     .drop a:hover {
         background-color: greenyellow;
         color:black;
+        transform: none;
     }
     nav:hover .drop {
         display: flex;
         flex-direction: column;
+        
     }
     .drop:hover #menu {
         background-color: #3e8e41;
+        
     }
     /* #frame{
         width: 80vw;

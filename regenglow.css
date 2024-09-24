@@ -1,12 +1,32 @@
-/* *{
-    margin: 0;
-    padding: 0;
+*{
+    margin: 1rem;
+    padding: 1rem;
     box-sizing: border-box;
-} */
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    line-height: 2rem;
+}
 body{
     background-color: black;
-    color: greenyellow;
+    font-size: 16px;
 }
 h1{
     text-align: center;
+    color: #ff206e;
+}
+h2{
+    color: #fbff12;
+}
+h3{
+    color: red;
+}
+p{
+    color: chartreuse;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+a:hover{
+    text-decoration: underline;
 }
