@@ -1,0 +1,238 @@
+/* Basic Reset and Typography */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Colors used - f3f3f3, 333*/
+}
+
+/* Header Styling */
+header {
+    /* Colors used -ff5733*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff5733;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    height: 50px;
+    z-index: 3;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    /* Colors used - white*/
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+       /* Colors used - white*/
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+}
+
+/**
+In CSS, ::before is a pseudo-element that is used to insert content before the content of an element.
+When you use hero::before, you're targeting a specific element with the class hero 
+and adding content before its actual content
+**/
+.hero::before {
+    content: "Jeshin Daniel, Section C";
+    background: url('https://www.mcgroup.com/wp-content/uploads/2021/03/Banner.png') no-repeat center center/cover;
+    background-blend-mode: darken;
+    opacity: 0.4; /* Adjust the opacity here */
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.hero h1, .hero p, .hero button {
+    position: relative;
+    z-index: 2; /* Ensures text appears above the background */
+    padding: 15px;
+    margin: 15px;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero button {
+    /* Colors used - ff5733*/
+    background-color: #ff5733;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+    /* Colors used - c70039*/
+    background-color: #c70039;
+    transform: scale(1.05);
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tourist Places Section */
+.places {
+    /* Colors used - fff*/
+    padding: 60px 40px;
+    margin: 20% 0 0 0;
+}
+
+.places h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.places-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.place-card {
+    /* Colors used - f3f3f3*/
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.place-card img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 150px;
+}
+
+.place-card h3 {
+    /* Colors used - ff5733*/
+    background-color: #ff5733;
+    font-size: 24px;
+    padding: 15px;
+    color: white;
+}
+
+.place-card p {
+    /* Colors used - 555*/
+    color: #555;
+    margin: 10px;
+}
+
+.place-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Culture Section */
+.culture {
+    /* Colors used - fefefe*/
+    padding: 60px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.culture h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.culture p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.culture-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.culture-gallery img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.culture-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    /* Colors used - ff5733, white*/
+    padding: 30px;
+    text-align: center;
+    background-color: #ff5733;
+    color: white;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    /* Colors used - white*/
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.footer-links a:hover {
+    /* Colors used - c70039*/
+}
+
+footer p {
+    font-size: 14px;
+}
