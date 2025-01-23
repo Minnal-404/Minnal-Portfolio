@@ -5,7 +5,10 @@
     box-sizing:border-box;
     font-family: "Poppins";
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 body{
     background-color: #101630;
     color: white;
@@ -148,7 +151,7 @@ a{
    transform: scale(1.1);
 }
 a:hover{
-   color:skyblue;
+   color:#4fb7dc;
    transition: 0.5s;
    transform: scale(1.1);
 }
@@ -165,8 +168,8 @@ i:hover{
 }
 #photo{
     border: 0.9rem solid #4fb7dc;
-    width: 80%;
-    height: 85%;
+    width: 90%;
+    height: 90%;
     position: absolute;
     z-index: -1;
     right: 0;
@@ -174,16 +177,17 @@ i:hover{
     border-radius: 0.5rem;
 }
 #image{
-    width: 90%;
-    height: 90%;
-    left: 0;
+    width: 27rem;
+    /* height: 100%; */
+    /* left: 0; */
+    right: 3rem;
     border-radius: 1rem;
     position: absolute;
 }
 #frame{
     position: relative;
     width: 30rem;
-    height: 35rem;
+    height: 30rem;
 }
 button{
     background: linear-gradient(120deg,#50c7ff,#6509ff ) ;
@@ -214,21 +218,32 @@ span{
 }
 .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(50vh,1fr));
+    grid-template-columns: 2fr 1fr;
     gap: 5rem;
     align-items: center;
     height: 80vh;
 }
-.portframe{
-    position: relative;
-    height: 25rem;
-    width: 25rem;
+.projects2{
+    grid-template-columns: 1fr 2fr;
 }
+.portframe{
+        position: relative;
+        width: 30rem;
+        height: 35rem;
+    }
 .portimage{
     height: 90%;
     border-radius: 1rem;
     position: absolute;
-    right: 0;
+    right: 1rem;
+    left: 3rem;
+    bottom: 3rem;
+}
+.portImage{
+    width: 27rem;
+}
+.portFrame{
+    height: 30rem;
 }
 .portphoto{
     border: 0.9rem solid #4fb7dc;
@@ -240,10 +255,10 @@ span{
     bottom: 0;
     border-radius: 0.5rem;
 }
-#portframe2{
-    width: 20rem;
-    height: 22rem;
-}
+/* #portframe2{
+    width: 23rem;
+    height: 35rem;
+} */
 h3{
     font-size: 2.2rem;
     font-weight: 400;
@@ -263,7 +278,86 @@ h4{
 
 #explogo{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    gap: 14rem;
+}
+.expLogo{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+
+}
+.barContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+.percent{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+justify-content: start;
+    /* align-items: center; */
+}
+.percentage{
+    color: #4fb7dc;    
+}
+.bar{
+    height: 1rem;
+    width: 100%;
+    /* border: #3e8e41 1px solid; */
+    border-radius: 1rem;
+    background: white;
+    margin-top: 0.2rem;
+}
+.amount{
+    background: #4fb7dc;
+    height: 1rem;
+    border-radius: 1rem;
+
+}
+.html{
+    width: 10%;
+}
+.css{
+    width: 10%;
+}
+.javascript{
+    width: 10%;
+}
+.bootstrap{
+    width: 10%;
+}
+.mysql{
+    width: 10%;
+}
+.python{
+    width: 10%;
+}
+.problemSolving{
+    width: 10%;
+}
+.level{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.levelp{
+    /* color:white; */
+    opacity: 1;
+    font-size: medium;
+}
+.levelAndBar{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+.check{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
 }
 .circle{
     background:  linear-gradient(to bottom,#470fba,#50c7ff) ;
@@ -298,7 +392,18 @@ h4{
     opacity: 0.5;
 }
 .logo{
-    width: 5rem;
+    width: 3rem;
+}
+.logoContainer{
+    display: flex;
+    gap: 1rem;
+}
+.mainLogoContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    width: 100%;
+    align-items: end;
 }
 #contacthead{
     margin: 0rem;
@@ -447,6 +552,19 @@ article{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+nav a {
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Add smooth transition for color and font-weight */
+  }
+.active-link {
+    color: #4fb7dc; /* Change to your desired color */
+    font-weight: bold;
+    transition: 0.5s;
+   transform: scale(1.1);
+  }
+  #experience{
+    padding-top: 1rem;
+  }
+
 @media (max-width: 1024px){
     *{
         font-size: 14px;
