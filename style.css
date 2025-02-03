@@ -45,6 +45,7 @@ body{
     height: auto;
     margin: 0;
 }
+
 .drop{
     display: flex;
     justify-content: space-between;
@@ -63,6 +64,7 @@ nav{
 }
 .mylogo{
     width:6rem;
+    cursor: pointer;
 }
 
 #headp{
@@ -145,6 +147,10 @@ h2{
 a{
     color: white;
     text-decoration: none;
+}
+.location:hover{
+    transform: scale(1.03);
+
 }
 #previous:hover{
     transition: 0.5s;
@@ -317,25 +323,25 @@ justify-content: start;
 
 }
 .html{
-    width: 10%;
+    width: 80%;
 }
 .css{
-    width: 10%;
+    width: 100%;
 }
 .javascript{
-    width: 10%;
+    width: 100%;
 }
 .bootstrap{
-    width: 10%;
+    width: 80%;
 }
 .mysql{
-    width: 10%;
+    width: 80%;
 }
 .python{
-    width: 10%;
+    width: 100%;
 }
 .problemSolving{
-    width: 10%;
+    width: 100%;
 }
 .level{
     display: flex;
@@ -564,10 +570,55 @@ nav a {
   #experience{
     padding-top: 1rem;
   }
+  .com{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 
 @media (max-width: 1024px){
     *{
         font-size: 14px;
+    }
+    
+    #menu{
+        background: transparent;
+        color: white;
+        font-size: 16px;
+        border: none;
+        margin-top: 25%;
+    }
+    nav{
+        padding: 0;
+        width: 20%;
+        margin: 0% 0 0 10%;
+        background: transparent;
+    }
+    .drop{
+        display: none;
+        position: absolute;
+        background-color: black;
+        width: 80vw;
+        top: 5rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 5;
+    }
+    .drop a {
+        color: white;
+        padding: 1.5rem 3rem;
+        text-decoration: none;
+    }      
+    .drop a:hover {
+        background-color: greenyellow;
+        color:black;
+        transform: none;
+    }
+    nav:hover .drop {
+        display: flex;
+        flex-direction: column;
+    }
+    .drop:hover #menu {
+        background-color: #3e8e41;
     }
     #bgtext{
         transform: rotate(335deg);
@@ -640,6 +691,25 @@ nav a {
     .border{
         margin: 0;
     }
+    #explogo{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    #projects2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #experience, #communication, #life{
+        gap: 3rem;
+    }
+    .expLogo{
+        grid-template-columns: 1fr;
+    }
+    h4{
+        font-size: x-large;
+    }
+    
 }
 @media (max-width: 767px){
     *{
@@ -653,48 +723,12 @@ nav a {
     body{
         position: relative;
     }
-    #menu{
-        background: transparent;
-        color: white;
-        font-size: 16px;
-        border: none;
-        margin-top: 25%;
-    }
-    nav{
-        padding: 0;
-        width: 20%;
-        margin: 0% 0 0 10%;
-        background: transparent;
-    }
-    .drop{
-        display: none;
-        position: absolute;
-        background-color: black;
-        width: 80vw;
-        top: 5rem;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 5;
-    }
-    .drop a {
-        color: white;
-        padding: 1.5rem;
-        text-decoration: none;
-    }      
-    .drop a:hover {
-        background-color: greenyellow;
-        color:black;
-        transform: none;
-    }
-    nav:hover .drop {
-        display: flex;
-        flex-direction: column;
-    }
-    .drop:hover #menu {
-        background-color: #3e8e41;
-    }
     #frame{
-        width: 80vw;
-        height: 30rem;
+        width: 25rem;
+        height: 26.5rem;
+    }
+    #image{
+        width: 90%;
     }
     #portfolio{
         height: 100%;
@@ -704,9 +738,6 @@ nav a {
         height: auto;
         grid-template-columns: repeat(auto-fill,minmax(30vh,1fr));
         padding-bottom: 3rem;
-    }#projects2{
-        display: flex;
-        flex-direction: column-reverse;
     }
     #blueh{
         text-align: center;
@@ -739,5 +770,23 @@ nav a {
     .location{
         flex-direction: column;
         align-items: center;
+    }
+    .levelp{
+        font-size: small;
+    }
+    .two{
+        padding-bottom: 1rem;
+    }
+    
+    #skills{
+        margin: 0;
+    }
+    h4{
+        font-size: large;
+    }
+    .com{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
     }
 }
